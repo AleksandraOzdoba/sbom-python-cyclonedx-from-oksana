@@ -1,6 +1,6 @@
 os: linux
 dist: focal
-language: node_js
+language: python
 jobs:
  include: 
  - name: "test" # existing functionality
@@ -8,7 +8,7 @@ jobs:
     - npm -v
  - name: "sbom"
    script: # existing functionality
-     - cd node
+     - cd python
      - npm install
    addons:
      sbom:
